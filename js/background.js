@@ -1,1 +1,7 @@
-console.log('Hello from XMLtoTable!');
+(function(){
+
+    var parser = new DOMParser();
+
+    console.log(parser);
+
+})();
