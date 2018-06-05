@@ -1,0 +1,19 @@
+{
+  "name": "XML to Table",
+  "version": "1.0",
+  "description": "Simple but nifty extension to display XML files in a neat table format, with options to search, sort etc.",
+  "manifest_version": 2,
+  "permissions": [],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "16": "images/xmltotable.png",
+    "32": "images/xmltotable32.png",
+    "48": "images/xmltotable48.png",
+    "128": "images/xmltotable128.png"
+  },
+  "manifest_version": 2
+}
