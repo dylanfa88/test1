@@ -3,12 +3,24 @@
   "version": "1.0",
   "description": "Simple but nifty extension to display XML files in a neat table format, with options to search, sort etc.",
   "manifest_version": 2,
-  "permissions": [],
+  "permissions": ["<all_urls>"],
   "options_page": "options.html",
   "background": {
     "scripts": ["js/background.js"],
     "persistent": false
   },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "file://*/*"
+      ],
+      "js": ["js/content.js"],
+      "css": ["css/content.css"],
+      "run_at": "document_end"
+    }
+  ],
   "icons": {
     "16": "images/xmltotable.png",
     "32": "images/xmltotable32.png",
